@@ -8,24 +8,26 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 <body>
-  <header>
+  <header class="header">
     <div class="nav-bar">
-      <div class="logo">
+
+      <div class="logo mx-30">
         <img src="./Instagram_logo.svg.png" class="logo" alt="instagram-image">
       </div>
-      <div class="seacrh-bar">
-        <form class="bd-search d-flex align-items-center">
-          <span class="algolia-autocomplete" style="position: relative; display: inline-block; direction: ltr;"><input type="search" class="form-control ds-input" id="search-input" placeholder="Search..." aria-label="Search for..." autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-owns="algolia-autocomplete-listbox-0" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: normal; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><span class="ds-dropdown-menu" role="listbox" id="algolia-autocomplete-listbox-0" style="position: absolute; top: 100%; z-index: 100; left: 0px; right: auto; display: none;"><div class="ds-dataset-1"></div></span></span>
-        </button>
+      <div class="seacrh-bar mx-30">
+        <form class="bd-search d-flex align-items-center h-30">
+          <span class="algolia-autocomplete" style="position: relative; display: inline-block; direction: ltr; height: inherit;">
+            <input type="search" class="form-control ds-input" id="search-input" placeholder="Search..." aria-label="Search for..." autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-owns="algolia-autocomplete-listbox-0" dir="auto" style="position: relative; vertical-align: top; height: inherit;">
+          </span>
         </form>
       </div>
-      <div class="nav-menu">
+      <div class="nav-menu mx-30">
         <ul class="d-flex list-none">
-          <li><i class="bi bi-house-door-fill size-2rem"></i></li>
-          <li><i class="bi bi-chat-quote size-2rem"></i></li>
-          <li><i class="bi bi-plus-square size-2rem"></i></li>
-          <li><i class="bi bi-compass size-2rem"></i></li>
-          <li><i class="bi bi-heart size-2rem"></i></li>
+          <li><i class="bi bi-house-door-fill size-2rem mx-5"></i></li>
+          <li><i class="bi bi-chat-quote size-2rem mx-5"></i></li>
+          <li><i class="bi bi-plus-square size-2rem mx-5"></i></li>
+          <li><i class="bi bi-compass size-2rem mx-5"></i></li>
+          <li><i class="bi bi-heart size-2rem mx-5"></i></li>
           <li><img src="./A8094C07-A815-411C-B37F-D2F066D9017B_1_201_a.jpeg" class="avatar" alt="avatar"></li>
         </ul>
       </div>
@@ -34,7 +36,15 @@
   <main>
     <div class="container">
       <session class="side-tab">
-        <div name="self-info"></div>
+        <div name="self-info">
+          <div>
+            <span>Fateskink</span>
+            <span><i class="bi bi-chevron-down"></i></span>
+          </div>
+          <div>
+            <span><i class="bi bi-pencil-square"></i></span>
+          </div>
+        </div>
         <div name="list-friends"></div>
       </session>
       <session class="message-tab">
@@ -50,6 +60,19 @@
 <script src=https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js integrity=”sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q” crossorigin=”anonymous”></script>
 <script src=”https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js” integrity=”sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl” crossorigin=”anonymous”></script>
 <style>
+  body, img {
+    padding: 0;
+    margin: 0;
+  }
+  main {
+    max-width: 1440px;
+  }
+  .mx-5{
+    margin-right: 5px;
+  }
+  .header {
+    border-bottom: solid;
+  }
   img.logo{
     max-width: 100px;
   }
@@ -63,12 +86,26 @@
   }
   .nav-bar{
     display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .align-center {
+    align-items: center;
   }
   .d-flex{
     display: flex;
+    padding: 0;
   }
   .list-none{
     list-style-type: none
   }
+  .mx-30 {
+    margin: 0 30px 0 30px;
+  }
+  .h-30 {
+    height: 30px;
+  }
+  /* .self-info {
+  } */
 </style>
 </html>
